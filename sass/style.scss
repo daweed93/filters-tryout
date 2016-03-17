@@ -1,0 +1,56 @@
+@import "_variables.scss";
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 3rem auto;
+	max-width: 80rem;
+	background-color: darken($ash-gray, 10%);
+	padding: 1rem .5rem;
+}
+body > div {
+	background-color: lighten($brown, 60%);
+	padding: .5rem 1rem;
+}
+.picture {
+	display: inline-block;
+	width: 33.1%;
+	img{
+		width: 100%;
+	}
+}
+.picture:first-child {
+	width: 100%;
+	//display: block;
+}
+.saturate {
+	-webkit-filter: saturate(3);
+}
+.brightness {
+	-webkit-filter: brightness(300%);
+}
+.blur {
+	-webkit-filter: blur(2px);
+}
+.contrast {
+	-webkit-filter: contrast(.9);
+}
+.gray-scale {
+	-webkit-filter: grayscale(1);
+}
+.opacity {
+	-webkit-filter: opacity(.8);
+}
+.invert {
+	-webkit-filter: invert(1);
+}
+.hue-rotate {
+	-webkit-filter: hue-rotate(180deg);
+}
+.sepia {
+	-webkit-filter: sepia(50%);
+}
+.mixed {
+	-webkit-filter: hue-rotate(100deg) brightness(2);
+}
