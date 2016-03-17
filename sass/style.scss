@@ -45,12 +45,12 @@ body > div {
 .invert {
 	-webkit-filter: invert(1);
 }
-.hue-rotate {
-	-webkit-filter: hue-rotate(180deg);
+.mixed {
+	-webkit-filter: invert(1) brightness(110%);
 }
 .sepia {
 	-webkit-filter: sepia(50%);
 }
-.mixed {
-	-webkit-filter: hue-rotate(100deg) brightness(2);
+.hue-rotate {
+	-webkit-filter: hue-rotate(300deg);
 }
