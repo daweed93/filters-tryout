@@ -54,3 +54,13 @@ body > div {
 .hue-rotate {
 	-webkit-filter: hue-rotate(300deg);
 }
+h1 {
+	background-color: lighten(gold, 30%);
+	color: darken($default-text-color, 20%);
+	font-size: 2rem;
+	text-align: center;
+	&:hover {
+		background-color: darken(gold, 5%);
+		font-size: 2.2rem;
+	}
+}
