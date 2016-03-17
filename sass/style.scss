@@ -15,9 +15,19 @@ body > div {
 }
 .picture {
 	display: inline-block;
-	width: 33.1%;
+	width: 33%;
 	img{
 		width: 100%;
+	}
+}
+@media screen and (max-width: 850px) {
+	.picture {
+		width: 49.6%;
+	}
+}
+@media screen and (max-width: 550px) {
+	.picture {
+		width: 49.0%;
 	}
 }
 .picture:first-child {
