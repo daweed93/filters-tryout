@@ -19,6 +19,9 @@ body > div {
 	img{
 		width: 100%;
 	}
+	&:first-child {
+		width: 100%;
+	}
 }
 @media screen and (max-width: 850px) {
 	.picture {
@@ -29,10 +32,7 @@ body > div {
 	.picture {
 		width: 49.0%;
 	}
-}
-.picture:first-child {
-	width: 100%;
-	//display: block;
+
 }
 .saturate {
 	-webkit-filter: saturate(3);
@@ -41,7 +41,7 @@ body > div {
 	-webkit-filter: brightness(300%);
 }
 .blur {
-	-webkit-filter: blur(2px);
+	-webkit-filter: blur(1.5px);
 }
 .contrast {
 	-webkit-filter: contrast(.9);
@@ -56,7 +56,13 @@ body > div {
 	-webkit-filter: invert(1);
 }
 .mixed {
-	-webkit-filter: invert(1) brightness(110%);
+	-webkit-filter: brightness(200%) grayscale(.8) contrast(200%) saturate(5);
+	&:hover {
+		-webkit-filter: hue-rotate(250deg);
+	}
+	&:active {
+		-webkit-filter: hue-rotate(50deg);
+	}
 }
 .sepia {
 	-webkit-filter: sepia(50%);
